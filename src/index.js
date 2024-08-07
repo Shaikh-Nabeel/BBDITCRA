@@ -8,12 +8,14 @@ import Top10 from './pages/Top10';
 import Trending from './pages/Trending';
 import {createBrowserRouter, Outlet, RouterProvider} from "react-router-dom"; 
 import Navbar from './component/Navbar';
+import Footer from './component/Footer';
 
 const AppLayout = () =>{
   return (
     <>
       <Navbar />
       <Outlet />
+      <Footer/>
     </>
   )
 }
