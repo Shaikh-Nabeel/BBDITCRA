@@ -12,7 +12,7 @@ function Navbar(props) {
             <navitems className='flex text-[20px] gap-5 text-gray-400 font-medium'>
                 <Link to='/top10'> <p className="cursor-pointer">Top10</p> </Link>
                 <Link to='/trending'><p>Trending</p> </Link>
-                <p>About</p>
+                <Link to='/watchlist'><p>Watchlist</p> </Link>
                 <p>Contact</p>
             </navitems>
         </div>

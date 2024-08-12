@@ -23,6 +23,7 @@ function Trending(){
     // }
 
     const [data, setData] = useState([]);
+    const from = 'trending';
     useEffect(()=>{
         fetch("https://api.coingecko.com/api/v3/coins/markets/?vs_currency=usd&per_page=100&page=1",{
             method: 'GET', // or 'POST', 'PUT', etc.
@@ -43,7 +44,7 @@ function Trending(){
     }else{
         return (
             <div>
-               <Cards apiData={data}/>
+               <Cards apiData={data} from={from} />
             </div>
         );
     }
